@@ -8,7 +8,7 @@ export const site: SiteConfig = {
   lang: 'en-US',
   description: 'Powered by SvelteKit/Urara',
   author: {
-    avatar: 'https://yt3.ggpht.com/EY3SldVTJk1M2MO8DYfjRD63gex94lFaUHzvQrfc4N6fHJpfbVQwCJ4seWZ7ZKO0LWVvznI0=s600-c-k-c0x00ffffff-no-rj-rp-mo',
+    avatar: 'urara/assets/astro_500.png',
     name: 'Shaum Debnath',
     status: '',
     bio: 'hi.'
