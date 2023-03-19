@@ -61,6 +61,53 @@
      background: blue;
 }     
 </style>
+<script>
+    function createCustomCursor() {
+       let cursor = document.getElementById('myCustomCursor');
+
+        if (cursor) {
+            console.log('myCustomCursor already exist');
+            //addCursorSpecialEffectToAllPageLinks(cursor);
+        } else {
+            cursor = document.createElement("div");
+            cursor.setAttribute("id", "myCustomCursor");
+            document.body.appendChild(cursor);
+
+            initCustomCursor(cursor);
+            //addCursorSpecialEffectToAllPageLinks(cursor);
+        }
+    }
+
+    
+    function initCustomCursor(cursor) {
+        document.body.onmousemove = function(e) {
+            cursor.style.setProperty('--x', (e.clientX) + 'px');
+            cursor.style.setProperty('--y', (e.clientY) + 'px');
+        }
+    }
+
+    function addCursorSpecialEffectToAllPageLinks(cursor) {
+        var links = document.querySelectorAll("a");
+
+    // This for loop is used to find all the page links and add the "myCursorHoverState" css class to create special effect on hover
+      for (var i = 0; i < links.length; i++) {
+          var link = links[i].getAttribute("href");
+          console.log(link);
+
+          links[i].addEventListener("mouseenter", function(event) {
+                console.log('In');
+                cursor.classList.add("myCursorHoverState");
+          }, false);
+
+          links[i].addEventListener("mouseleave", function(event) {
+                console.log('Out');
+                cursor.classList.remove("myCursorHoverState");
+          }, false);
+      }
+  }
+
+  createCustomCursor();
+</script>
   </head>
   <body itemscope itemtype="https://schema.org/WebPage">
     <div style="display: contents">%sveltekit.body%</div>
