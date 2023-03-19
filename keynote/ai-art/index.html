@@ -10,7 +10,7 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta http-equiv="content-security-policy" content="">
 		<link href="../../_app/immutable/assets/_layout-0618b5b3.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/start-bf384e8b.js">
+		<link rel="modulepreload" href="../../_app/immutable/start-4841a56d.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/index-6a732392.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons-6f718a6d.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/index-a61c3598.js">
@@ -21,7 +21,7 @@
 		<link rel="modulepreload" href="../../_app/immutable/chunks/icon-18fd80a0.js">
 		<link rel="modulepreload" href="../../_app/immutable/modules/pages/_layout.ts-690d05ce.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/_layout-e59680bc.js">
-		<link rel="modulepreload" href="../../_app/immutable/components/pages/keynote/ai-art/_page.svelte.md-1413fd54.js">
+		<link rel="modulepreload" href="../../_app/immutable/components/pages/keynote/ai-art/_page.svelte.md-3feee687.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/post_layout-a693b736.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/post_card-58d8eaa7.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/footer-09b27f13.js">
@@ -37,7 +37,7 @@
     <meta property="og:url" content="https://heroic-cajeta-4257c4.netlify.app/keynote/ai-art">
     <meta property="article:author" content="Shaum Debnath">
     <meta property="article:published_time" content="2022-10-7">
-    <meta property="article:modified_time" content="2023-03-19T20:25:54.926Z"><!-- HEAD_svelte-1y1uq0g_END -->
+    <meta property="article:modified_time" content="2023-03-19T20:27:23.314Z"><!-- HEAD_svelte-1y1uq0g_END -->
     <style>
     /* width */
     ::-webkit-scrollbar {
@@ -90,6 +90,53 @@
      background: blue;
 }     
 </style>
+<script>
+    function createCustomCursor() {
+       let cursor = document.getElementById('myCustomCursor');
+
+        if (cursor) {
+            console.log('myCustomCursor already exist');
+            //addCursorSpecialEffectToAllPageLinks(cursor);
+        } else {
+            cursor = document.createElement("div");
+            cursor.setAttribute("id", "myCustomCursor");
+            document.body.appendChild(cursor);
+
+            initCustomCursor(cursor);
+            //addCursorSpecialEffectToAllPageLinks(cursor);
+        }
+    }
+
+    
+    function initCustomCursor(cursor) {
+        document.body.onmousemove = function(e) {
+            cursor.style.setProperty('--x', (e.clientX) + 'px');
+            cursor.style.setProperty('--y', (e.clientY) + 'px');
+        }
+    }
+
+    function addCursorSpecialEffectToAllPageLinks(cursor) {
+        var links = document.querySelectorAll("a");
+
+    // This for loop is used to find all the page links and add the "myCursorHoverState" css class to create special effect on hover
+      for (var i = 0; i < links.length; i++) {
+          var link = links[i].getAttribute("href");
+          console.log(link);
+
+          links[i].addEventListener("mouseenter", function(event) {
+                console.log('In');
+                cursor.classList.add("myCursorHoverState");
+          }, false);
+
+          links[i].addEventListener("mouseleave", function(event) {
+                console.log('Out');
+                cursor.classList.remove("myCursorHoverState");
+          }, false);
+      }
+  }
+
+  createCustomCursor();
+</script>
   </head>
   <body itemscope itemtype="https://schema.org/WebPage">
     <div style="display: contents">
@@ -160,7 +207,7 @@
       <div class="flex font-semibold gap-1.5"><a rel="author" class="opacity-75 hover:opacity-100 hover:text-primary duration-500 ease-in-out p-author h-card" href="https://heroic-cajeta-4257c4.netlify.app">Shaum Debnath</a>
   <span class="opacity-50">/</span>
   <a href="/keynote/ai-art" class="u-url u-uid swap group/time"><time class="group-hover/time:opacity-0 font-semibold opacity-75 duration-500 ease-in-out mr-auto dt-published" datetime="2022-10-07T00:00:00.000Z" itemprop="datePublished">Friday, Oct 7, 22</time>
-    <time class="opacity-0 group-hover/time:opacity-100 font-semibold text-primary duration-500 ease-in-out mr-auto dt-updated" datetime="2023-03-19T20:25:54.926Z" itemprop="dateModified">Sunday, Mar 19, 23</time></a></div>
+    <time class="opacity-0 group-hover/time:opacity-100 font-semibold text-primary duration-500 ease-in-out mr-auto dt-updated" datetime="2023-03-19T20:27:23.314Z" itemprop="dateModified">Sunday, Mar 19, 23</time></a></div>
       <h1 itemprop="name headline" class="card-title text-3xl mb-8 p-name">AI Art in a Nutshell</h1>
       </div>
     <main itemprop="articleBody" class="urara-prose prose e-content"><div class="overflow-x-auto mb-4"><table class="table w-full"><thead><tr><th align="center"><img src="https://keystonekeynote.com/wp-content/uploads/2022/10/AIArt_2-768x768.png" alt="https://keystonekeynote.com/wp-content/uploads/2022/10/AIArt_2-768x768.png" class="rounded-lg my-2" loading="lazy" decoding="async"></th></tr></thead>
@@ -188,14 +235,14 @@
       </p></div></footer></div></div></div>
 
 
-		<script type="module" data-sveltekit-hydrate="88u6rz">
-			import { start } from "../../_app/immutable/start-bf384e8b.js";
+		<script type="module" data-sveltekit-hydrate="1gb1nuu">
+			import { start } from "../../_app/immutable/start-4841a56d.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="88u6rz"]').parentNode,
-				version: "1679257572050",
+				target: document.querySelector('[data-sveltekit-hydrate="1gb1nuu"]').parentNode,
+				version: "1679257661212",
 				hydrate: {
 					node_ids: [0, 4],
 					data: [null,null],
@@ -204,6 +251,6 @@
 				}
 			});
 		</script>
-	<script type="application/json" data-sveltekit-fetched data-url="/posts.json">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Chess is Popular Now!?\",\"created\":\"2023-3-10\",\"tags\":[\"Chess\"],\"flags\":[],\"updated\":\"2023-03-19T20:25:54.926Z\",\"slug\":\"/keynote/chess-popular/+page.svelte.md\",\"path\":\"/keynote/chess-popular\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"AI Art in a Nutshell\",\"created\":\"2022-10-7\",\"tags\":[\"AI\"],\"flags\":[],\"updated\":\"2023-03-19T20:25:54.926Z\",\"slug\":\"/keynote/ai-art/+page.svelte.md\",\"path\":\"/keynote/ai-art\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"About Me\",\"created\":\"1970-1-1\",\"tags\":[\"Shaum\"],\"flags\":[],\"updated\":\"2023-03-19T20:25:54.922Z\",\"slug\":\"/about-me/+page.svelte.md\",\"path\":\"/about-me\",\"toc\":false,\"type\":\"article\",\"html\":\"\"}]"}</script></div>
+	<script type="application/json" data-sveltekit-fetched data-url="/posts.json">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Chess is Popular Now!?\",\"created\":\"2023-3-10\",\"tags\":[\"Chess\"],\"flags\":[],\"updated\":\"2023-03-19T20:27:23.314Z\",\"slug\":\"/keynote/chess-popular/+page.svelte.md\",\"path\":\"/keynote/chess-popular\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"AI Art in a Nutshell\",\"created\":\"2022-10-7\",\"tags\":[\"AI\"],\"flags\":[],\"updated\":\"2023-03-19T20:27:23.314Z\",\"slug\":\"/keynote/ai-art/+page.svelte.md\",\"path\":\"/keynote/ai-art\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"About Me\",\"created\":\"1970-1-1\",\"tags\":[\"Shaum\"],\"flags\":[],\"updated\":\"2023-03-19T20:27:23.310Z\",\"slug\":\"/about-me/+page.svelte.md\",\"path\":\"/about-me\",\"toc\":false,\"type\":\"article\",\"html\":\"\"}]"}</script></div>
   </body>
 </html>
