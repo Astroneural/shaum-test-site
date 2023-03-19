@@ -53,7 +53,7 @@ export const theme: ThemeConfig = [
 
 export const head: HeadConfig = {}
 
-export const header: HeaderConfig = {
+/*export const header: HeaderConfig = {
   nav: [
     {
       text: 'Get Started',
@@ -64,7 +64,7 @@ export const header: HeaderConfig = {
       link: '/hello-world/elements'
     }
   ]
-}
+}*/
 
 export const footer: FooterConfig = {
   nav: [
