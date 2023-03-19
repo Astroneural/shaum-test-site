@@ -2,7 +2,7 @@ import type { Icon } from '$lib/types/icon'
 import { site } from '$lib/config/site'
 
 export const favicon: Icon = {
-  src: site.protocol + site.domain + '/favicon.png',
+  src: 'https://shau.ml/favicon_48x42.png', // restructure like others later
   sizes: '48x42',
   type: 'image/png'
 }
