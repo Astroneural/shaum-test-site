@@ -71,10 +71,6 @@ export const footer: FooterConfig = {
     {
       text: 'Feed',
       link: '/atom.xml'
-    },
-    {
-      text: 'Sitemap',
-      link: '/sitemap.xml'
     }
   ]
 }
