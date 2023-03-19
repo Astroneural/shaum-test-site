@@ -91,3 +91,17 @@ declare global {
     type Page = { title?: string; path: string }
   }
 }
+
+$ npm install cursor-dot --save
+import curDot from 'cursor-dot'
+
+cursor.over(".element-1", {
+  background: "#fff"
+});
+cursor.over(".element-2", {
+  borderColor: "rgba(255,255,255,.38)"
+});
+cursor.over(".element-3", {
+  scale: 0.5,
+  background: "#fff"
+});
