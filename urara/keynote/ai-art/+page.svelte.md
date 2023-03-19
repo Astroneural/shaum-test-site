@@ -1,6 +1,6 @@
 ---
 title: AI Art in a Nutshell
-created: 2023-19-3
+created: 2023-3-19
 tags: ['AI']
 ---
 
