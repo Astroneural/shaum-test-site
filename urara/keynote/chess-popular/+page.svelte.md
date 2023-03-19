@@ -4,7 +4,7 @@ created: 2023-3-10
 tags: ['Chess']
 ---
 
-| ![]([](https://keystonekeynote.com/wp-content/uploads/2023/03/Chess_1.jpg) | 
+| ![](https://keystonekeynote.com/wp-content/uploads/2023/03/Chess_1.jpg) | 
 |:--:| 
 | *“Image of a chess board exploding”* |
 
@@ -28,6 +28,6 @@ Every month, Chess.com releases a new series of chess bots, or algorithms that c
 
 Over the course of the past few years, chess has grown immensely. Pretty impressive for a game more than a thousand years old. I’ll leave you with the Google Trends data for the search term “chess” over the past five years in the United States.
 
-| ![]([](https://keystonekeynote.com/wp-content/uploads/2023/03/ChessGraph_3-768x247.jpg) | 
+| ![](https://keystonekeynote.com/wp-content/uploads/2023/03/ChessGraph_3-768x247.jpg) | 
 |:--:| 
 | *“Chess Popularity Over Time”* |
