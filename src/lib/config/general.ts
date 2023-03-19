@@ -56,9 +56,14 @@ export const head: HeadConfig = {}
 export const header: HeaderConfig = {
   nav: [
     {
-      text: 'About Me',
-      link: '/about-me'
+      text: 'Get Started',
+      link: '/hello-world'
+    },
+    {
+      text: 'Elements',
+      link: '/hello-world/elements'
     }
+  ]
 }
 
 export const footer: FooterConfig = {
