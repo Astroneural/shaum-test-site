@@ -33,23 +33,76 @@
       }
 
       body {
-        height: 100vh;
-        background-color: black;
-        cursor: none;
-      }
+  height: 100vh;
+  background-color: black;
+  cursor: none;
+}
 
-      .dot-cursor {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        mix-blend-mode: difference;
-        pointer-events: none;
-        z-index: 9999;
-      }
+.dot-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+a:hover .real-cursor,
+button:hover .real-cursor,
+input:hover .real-cursor,
+textarea:hover .real-cursor,
+select:hover .real-cursor {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.real-cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover {
+  cursor: none;
+}
+
+a:active,
+button:active,
+input:active,
+textarea:active,
+select:active {
+  cursor: none;
+}
+
+input[type="submit"] {
+  cursor: none;
+}
+
+textarea:focus,
+input:focus {
+  cursor: text;
+}
+
+select {
+  cursor: pointer;
+}
     </style>
   </head>
   <body itemscope itemtype="https://schema.org/WebPage">
