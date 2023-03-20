@@ -61,7 +61,7 @@ select:hover .real-cursor {
 }
 
 .real-cursor {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 24px;
@@ -73,6 +73,35 @@ select:hover .real-cursor {
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
   z-index: 9998;
+}
+
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover {
+  cursor: none;
+}
+
+a:active,
+button:active,
+input:active,
+textarea:active,
+select:active {
+  cursor: none;
+}
+
+input[type="submit"] {
+  cursor: none;
+}
+
+textarea:focus,
+input:focus {
+  cursor: text;
+}
+
+select {
+  cursor: pointer;
 }
 
 a:hover,
