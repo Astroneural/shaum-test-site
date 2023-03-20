@@ -57,12 +57,11 @@
     <div style="display: contents">%sveltekit.body%</div>
     <script>
       const cursor = document.querySelector('.dot-cursor');
-      const sensitivityFactor = 1;
 
       // Update the position of the cursor on mouse move
       document.addEventListener('mousemove', e => {
-        const x = e.clientX / sensitivityFactor;
-        const y = e.clientY / sensitivityFactor;
+        const x = e.clientX;
+        const y = e.clientY;
         cursor.style.top = y + 'px';
         cursor.style.left = x + 'px';
       });
