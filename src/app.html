@@ -51,12 +51,36 @@
   z-index: 9999;
 }
 
+a:hover .real-cursor,
+button:hover .real-cursor,
+input:hover .real-cursor,
+textarea:hover .real-cursor,
+select:hover .real-cursor {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.real-cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 9998;
+}
+
 a:hover,
 button:hover,
 input:hover,
 textarea:hover,
 select:hover {
-  cursor: pointer;
+  cursor: none;
 }
 
 a:active,
@@ -64,11 +88,11 @@ button:active,
 input:active,
 textarea:active,
 select:active {
-  cursor: pointer;
+  cursor: none;
 }
 
 input[type="submit"] {
-  cursor: pointer;
+  cursor: none;
 }
 
 textarea:focus,
