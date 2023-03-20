@@ -33,23 +33,53 @@
       }
 
       body {
-        height: 100vh;
-        background-color: black;
-        cursor: none;
-      }
+  height: 100vh;
+  background-color: black;
+  cursor: none;
+}
 
-      .dot-cursor {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        mix-blend-mode: difference;
-        pointer-events: none;
-        z-index: 9999;
-      }
+.dot-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover {
+  cursor: pointer;
+}
+
+a:active,
+button:active,
+input:active,
+textarea:active,
+select:active {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+  cursor: text;
+}
+
+select {
+  cursor: pointer;
+}
+
     </style>
   </head>
   <body itemscope itemtype="https://schema.org/WebPage">
