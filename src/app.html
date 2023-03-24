@@ -147,16 +147,6 @@
         cursor.style.top = y + 'px';
         cursor.style.left = x + 'px';
       });
-      let scrollTimeout;
-      document.addEventListener('scroll', () => {
-    // Use a timeout to throttle the scroll event
-         clearTimeout(scrollTimeout);
-         scrollTimeout = setTimeout(() => {
-             const x = cursor.getBoundingClientRect().left + window.scrollX;
-             const y = cursor.getBoundingClientRect().top + window.scrollY;
-             cursor.style.top = y + 'px';
-             cursor.style.left = x + 'px';
-         }, 100);
   
       });
     </script>
