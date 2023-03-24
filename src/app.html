@@ -141,22 +141,18 @@
     <script>
       const cursor = document.querySelector('.dot-cursor');
 
-      document.addEventListener('mousemove', e => {
-  const x = e.pageX;
-  const y = e.pageY;
-  cursor.style.top = y + 'px';
-  cursor.style.left = x + 'px';
-});
-      let scrollTimeout;
-document.addEventListener('scroll', () => {
-  // Use a timeout to throttle the scroll event
-  clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(() => {
-    const x = cursor.getBoundingClientRect().left + window.scrollX;
-    const y = cursor.getBoundingClientRect().top + window.scrollY;
-    cursor.style.top = y + 'px';
-    cursor.style.left = x + 'px';
-  }, 100);
+      const positionElement = (e)=> {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX;
+   
+  cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  
+  cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+ 
+}
+
+window.addEventListener('mousemove', positionElement)
+  
 });
     </script>
   </body>
