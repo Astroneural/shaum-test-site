@@ -3,6 +3,8 @@ title: About Me
 created: 2008-1-31
 tags: ['Shaum']
 ---
+| ![](/assets/shaum-900x900.jpg) | 
+|:--:| 
 
 Hi, I'm Shaumprovo Debnath. I like a lot of things, including the sciences, mathematics, and art. In particular, I'm fascinated by computer science, but my real passion is astrophysics, which I hope to study someday to unlock the secrets of the universe. I also like classical music, and I play the violin and piano. I love particularly love reading classical literature and science topics I am interested in, among other genres.
 
