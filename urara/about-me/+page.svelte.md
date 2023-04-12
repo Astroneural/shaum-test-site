@@ -3,7 +3,7 @@ title: About Me
 created: 2008-1-31
 tags: ['Shaum']
 ---
-| ![](/assets/shaum-900x900.jpg) | 
+| ![](/assets/shaum-500x500.jpg) | 
 |:--:| 
 
 ## Interests
