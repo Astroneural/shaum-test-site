@@ -1,5 +1,6 @@
 ---
 title: Chess is Popular Now!?
+image: '/assets/chess_banner.webp'
 created: 2023-3-10
 tags: ['Chess']
 ---
