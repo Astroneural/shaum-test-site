@@ -1,6 +1,6 @@
 ---
 title: AI Art in a Nutshell
-image: girl-with-a-pearl-earring.webp
+image: 'girl-with-a-pearl-earring.webp'
 created: 2022-10-7
 tags: ['AI']
 ---
