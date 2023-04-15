@@ -7,6 +7,8 @@ tags: ['Music']
   import { YouTube, Spotify, SoundCloud } from 'sveltekit-embed'
 </script>
 
+Before you continue with this article, I’d recommend you first play the most famous work by Joaquín Rodrigo, the “Concierto de Aranjuez.”
+
 <YouTube youTubeId="JaYagLD_2dc" />
 
 From the opening notes, Rodrigo paints with summer colors and a Spanish elan. This recognizably Spanish and yet unique sound permeates many of Rodrigo’s works, especially those for guitar. When one closes their eyes, they can see a brilliant, warm sunset setting over spain. Something Rodrigo himself could not even remember.
