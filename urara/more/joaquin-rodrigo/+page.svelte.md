@@ -1,5 +1,6 @@
 ---
 title: Joaquín Rodrigo
+image: '/assets/Guitarra-espanola2.webp'
 created: 2023-4-14
 tags: ['Music']
 ---
