@@ -10,7 +10,7 @@ tags: ['Music']
 
 Before you continue with this article, I’d recommend you first play the most famous work by Joaquín Rodrigo, the “Concierto de Aranjuez.”
 
-<YouTube youTubeId="JaYagLD_2dc" />
+<YouTube youTubeId="RhO5OSLZjl8" />
 
 From the opening notes, Rodrigo paints with summer colors and a Spanish elan. This recognizably Spanish and yet unique sound permeates many of Rodrigo’s works, especially those for guitar. When one closes their eyes, they can see a brilliant, warm sunset setting over spain. Something Rodrigo himself could not even remember.
 
@@ -27,3 +27,6 @@ Rodrigo could both read and write music in braille. His method of composing incl
 All of Rodrigo’s music is considered to be “neoclassical,” and certainly are apt examples of Romantic era music. In guitar concertos, it strums colors and vague thoughts of longing; in the violin concerto, it sings emotion; and in the piano concerto, it roars with energy. All of his music, however, is alive. It shows life through these colors, thoughts, emotions, and feelings, all intertwined and yet distinct enough to tell the heart how to react.
 
 Joaquín Rodrigo passed away in 1999, two years after the death of his beloved wife. 
+
+Edit 5/13/23: 
+I saw Concierto de Aranjuez live in concert!
