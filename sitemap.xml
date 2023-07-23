@@ -11,13 +11,28 @@
     </url>
     
         <url>
+            <loc>https://heroic-cajeta-4257c4.netlify.app/more/joaquin-rodrigo</loc>
+            <lastmod>2023-07-23T02:21:52.321Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://heroic-cajeta-4257c4.netlify.app/keynote/messiaen</loc>
+            <lastmod>2023-07-23T02:21:52.321Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://heroic-cajeta-4257c4.netlify.app/keynote/chess-popular</loc>
+            <lastmod>2023-07-23T02:21:52.321Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
             <loc>https://heroic-cajeta-4257c4.netlify.app/keynote/ai-art</loc>
-            <lastmod>2023-07-23T02:07:45.342Z</lastmod>
+            <lastmod>2023-07-23T02:21:52.321Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://heroic-cajeta-4257c4.netlify.app/about-me</loc>
-            <lastmod>2023-07-23T02:07:45.338Z</lastmod>
+            <lastmod>2023-07-23T02:21:52.317Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
