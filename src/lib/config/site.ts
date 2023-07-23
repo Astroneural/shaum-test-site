@@ -9,7 +9,7 @@ export const site: SiteConfig = {
   description: 'Powered by SvelteKit/Urara',
   author: {
     avatar: '/assets/astro_500.png',
-    name: 'Shaum{pro}vo Debnath',
+    name: '[Shaumpro]vo Debnath',
     status: '',
     bio: 'Current sophomore in high school'
   },
