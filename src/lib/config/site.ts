@@ -9,9 +9,9 @@ export const site: SiteConfig = {
   description: 'Powered by SvelteKit/Urara',
   author: {
     avatar: '/assets/astro_500.png',
-    name: 'Shaumprovo Debnath',
+    name: 'Shaum{pro}vo Debnath',
     status: '',
-    bio: 'Current freshman in high school'
+    bio: 'Current sophomore in high school'
   },
   themeColor: '#3D4451'
 }
